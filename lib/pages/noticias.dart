@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:lasei/authentication.dart';
+import 'package:lasei/pages/noticiarender.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NoticiasPage extends StatelessWidget {
@@ -39,7 +40,19 @@ class NoticiasPage extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(5),
       child: GestureDetector(
-        onTap: () => _launchURL(item['url']),
+        onTap: () {
+          if ((item['url'] == null) || (item['url'] == '')) {
+            if ((item['contenido'] != null) && (item['contenido'] != '')) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => NoticiaRender(item: item)),
+              );
+            }
+          } else {
+            _launchURL(item['url']);
+          }
+        },
         child: ClipRRect(
             borderRadius: BorderRadius.circular(20.0),
             child: Container(
