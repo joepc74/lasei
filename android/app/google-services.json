@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "661887084801",
+    "project_id": "lasei-app-socios",
+    "storage_bucket": "lasei-app-socios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661887084801:android:3d07fe2576662c3bb31300",
+        "android_client_info": {
+          "package_name": "com.example.lasei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661887084801-hpqgdjlg03o7elguh8mtrdjin87cdgmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeXh30BIxqvIJe4oIp8Z_ymUTDyirYJ3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661887084801-hpqgdjlg03o7elguh8mtrdjin87cdgmf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "661887084801-hrv402ohbab2vgq9jaih1tj9jglrtb88.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "es.lasei.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
